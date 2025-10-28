@@ -1,11 +1,7 @@
-<!-- Nova Racer GitHub-safe Edition -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/cannon-es@0.21.0/dist/cannon-es.js"></script>
-<script>
+// Nova Racer GitHub-safe Edition (Pure JS)
 let scene, camera, renderer, world;
-let car, carBody, wheels = [];
-let keys = {}, speedEl, nitroEl;
-let nitro = 100, boost = false;
+let car, carBody;
+let keys = {}, nitro = 100, boost = false;
 
 init();
 animate();
@@ -98,6 +94,3 @@ function animate(){
   camera.lookAt(car.position);
   renderer.render(scene,camera);
 }
-</script>
-Replace with GitHub-safe JavaScript version
-
