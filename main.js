@@ -1,6 +1,6 @@
 // Nova Racer GitHub-safe Edition (Pure JS)
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js";
-import * as CANNON from "https://cdn.jsdelivr.net/npm/cannon-es@0.21.0/dist/cannon-es.js";
+const THREE = window.THREE;
+const CANNON = window.CANNON;
 
 let scene, camera, renderer, world;
 let car, carBody;
