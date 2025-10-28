@@ -99,3 +99,5 @@ function animate(){
   renderer.render(scene,camera);
 }
 </script>
+Replace with GitHub-safe JavaScript version
+
