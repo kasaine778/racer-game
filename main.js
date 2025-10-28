@@ -245,7 +245,7 @@ function syncVisuals(){
       vehicle.updateWheelTransform(i);
       const t = vehicle.wheelInfos[i].worldTransform;
       wheelMeshes[i].position.copy(t.position);
-      wheelMeshes[i'].quaternion.copy(t.quaternion);
+      wheelMeshes[i].quaternion.copy(t.quaternion);
     }
   }
   // boost light follow and intensity
