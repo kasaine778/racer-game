@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Racer Game — Nova</title>
+  <title>Nova Racer — Nitro Edition</title>
   <style>
-    html,body { height:100%; margin:0; overflow:hidden; background:#111; color:#eee; font-family:system-ui,Segoe UI,Roboto,Arial; }
-    #overlay { position: absolute; left: 10px; top: 10px; z-index: 10; background: rgba(0,0,0,0.4); padding:8px 12px; border-radius:8px; }
-    #overlay .hint { opacity:0.85; font-size:13px; }
-    canvas { display:block; }
+    html,body { height:100%; margin:0; overflow:hidden; background:#0e0e12; color:#eee; font-family:system-ui,Segoe UI,Roboto,Arial; }
+    #overlay { position: absolute; left: 10px; top: 10px; z-index: 10; background: rgba(0,0,0,0.35); padding:8px 12px; border-radius:8px; }
+    #overlay .hint { opacity:0.9; font-size:13px; }
+    #speed, #nitro { font-weight:600; color:#7ef9ff; margin-top:6px; }
+    canvas{ display:block; }
   </style>
 </head>
 <body>
   <div id="overlay">
-    <div><strong>Nova Racer Game</strong></div>
-    <div class="hint">W/A/S/D or ←↑↓→ to steer / accelerate / brake • Space = handbrake • 1 = car • 2 = bike</div>
-    <div id="speed" class="hint">Speed: 0 km/h</div>
+    <div><strong>🏎️ Nova Racer — Nitro Edition</strong></div>
+    <div class="hint">W/A/S/D or ←↑↓→ = drive • Space = handbrake • Shift = NITRO • 1 = car • 2 = bike</div>
+    <div id="speed">Speed: 0 km/h</div>
+    <div id="nitro">Nitro: 100%</div>
+    <div class="hint" style="opacity:0.75; font-size:12px; margin-top:6px;">Third-person chase camera enabled</div>
   </div>
+
   <script type="module" src="./main.js"></script>
 </body>
 </html>
