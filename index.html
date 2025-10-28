@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Racer Game — Nova</title>
+  <style>
+    html,body { height:100%; margin:0; overflow:hidden; background:#111; color:#eee; font-family:system-ui,Segoe UI,Roboto,Arial; }
+    #overlay { position: absolute; left: 10px; top: 10px; z-index: 10; background: rgba(0,0,0,0.4); padding:8px 12px; border-radius:8px; }
+    #overlay .hint { opacity:0.85; font-size:13px; }
+    canvas { display:block; }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <div><strong>Nova Racer Game</strong></div>
+    <div class="hint">W/A/S/D or ←↑↓→ to steer / accelerate / brake • Space = handbrake • 1 = car • 2 = bike</div>
+    <div id="speed" class="hint">Speed: 0 km/h</div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
